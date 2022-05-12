@@ -1,0 +1,10 @@
+name: 'SPSauce Build'
+description: 'Run a SPSauce build script to fetch dependencies, compile and create release artifacts for your SourceMod plugins.'
+branding:
+  color: 'orange'
+  icon: 'package'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - '--help'

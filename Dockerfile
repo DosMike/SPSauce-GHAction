@@ -8,7 +8,7 @@ RUN apk add bash git
 COPY sps /entrypoint.sh
 COPY spsauce/ /spsauce/
 # fetch all necessary dependencies to run sps and commit
-RUN /sps -?
+RUN /entrypoint.sh -?
 
 ENTRYPOINT ["/entrypoint.sh"]
 # calling the action with

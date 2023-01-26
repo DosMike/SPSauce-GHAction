@@ -3,8 +3,19 @@ description: 'Run a SPSauce build script to fetch dependencies, compile and crea
 branding:
   color: 'orange'
   icon: 'package'
+inputs:
+  script:
+    description: 'Path of the spsauce file to run'
+    required: true
+    default: 'git.sauce'
+  args:
+    description: 'Additional Arguments for sps'
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  env:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   args:
-    - '--help'
+    - ${{ inputs.script }}
+    - ${{ inputs.args }}

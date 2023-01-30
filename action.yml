@@ -9,7 +9,7 @@ inputs:
     required: true
     default: 'git.sauce'
   github-token:
-    description: 'GitHub token to access API (Set to github.token)
+    description: 'GitHub token to access API (Set to github.token)'
     required: true
   args:
     description: 'Additional Arguments for sps'

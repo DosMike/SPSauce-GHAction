@@ -1,5 +1,6 @@
-# SPSauce-GHAction
-GitHub action simplifying running SPSacue build scripts in your workflow
+# SPSauce Build
+GitHub Action simplifying compiling and releasing [SourceMod](https://www.sourcemod.net/) plugins by running 
+[SPSacue](https://github.com/DosMike/SPSauce/) build scripts in your workflow.
 
 ## Usage
 Allows you to run a SPSauce build script. Set up to take the same arg string as the wrapper

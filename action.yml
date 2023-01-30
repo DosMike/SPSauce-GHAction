@@ -8,6 +8,9 @@ inputs:
     description: 'Path of the spsauce file to run'
     required: true
     default: 'git.sauce'
+  github-token:
+    description: 'GitHub token to access API (Set to github.token)
+    required: true
   args:
     description: 'Additional Arguments for sps'
     required: false
@@ -15,7 +18,7 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   env:
-    GITHUB_TOKEN: ${{ github.token }}
+    GITHUB_TOKEN: ${{ inputs.github-token }}
   args:
     - ${{ inputs.script }}
     - ${{ inputs.args }}

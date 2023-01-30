@@ -22,7 +22,7 @@ jobs:
         with:
           script: '<build file>'
           github-token: ${{ github.token }}
-		  args: '<additional args to SPS>'
+          args: '<additional args to SPS>'
 ```
 
 *git.sauce*

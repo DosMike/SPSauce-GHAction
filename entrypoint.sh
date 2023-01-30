@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/sps.sh $2 -- "$1"
+java -jar "/spsauce/SPSauce-Action.jar" $2 -- "$1"

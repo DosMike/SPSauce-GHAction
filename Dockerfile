@@ -5,5 +5,5 @@ RUN apt-get update -q -y
 RUN apt-get install -q -y bash git
 # copy stuff into the container.
 COPY entrypoint.sh /entrypoint.sh
-COPY spsauce/SPSauce-1.5.0.jar /spsauce/SPSauce-Action.jar
+COPY SPSauce-1.5.0.jar /spsauce/SPSauce-Action.jar
 ENTRYPOINT ["/entrypoint.sh"]
